@@ -1,4 +1,3 @@
-const token = 'BQBTFwUXuLQ-kPZ9Gi03mJtzL4coeoWA7H5GGlalIZNTfEVsmJ6wAIc6bVIypTJKsJe146_LWqR6Uj2xInBuPvtosE_l-m-qXOI7GEucVPA_kWgurv4nicGopz0Hb9BaKMmmJ22eQ30T-RM0snoAG28Qinam56sfhPs91t48Yt-G7w8vg247OE3MpR7M6X1m_IWypwsZNo21m1_Y1fMyVZ70pyBiTu9Dze8hxvSkCcZ3EQbtR3b1C1WcVU1iglFTHMzmXLogP402ZG33JxOzRChFnh5Fpy8KTs4SH7fWd-PEKCPOkVKdb0GBNYz1ut-yg3f3';
 const uri = 'https://api.spotify.com'
 async function fetchWebApi(endpoint, method, body) {
     const res = await fetch(`${uri}/${endpoint}`, {
@@ -32,4 +31,4 @@ for (let i=0; i<total; i++) {
 }
 
 const frontend = [moreData,{data:data}]
-console.log(frontend)
+console.log(frontend[1].data)
